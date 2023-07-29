@@ -297,10 +297,81 @@ template {
   display: none !important;
 }
 
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../img/main_bg.jpg") no-repeat 50%/cover;
+  padding-top: 205px;
+}
+.promo__title {
+  width: 535px;
+  margin-top: 10px;
+}
+.promo_subtitle {
+  position: relative;
+  padding-left: 10px;
+  z-index: 2;
+}
+.promo_subtitle:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: #FFA501;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.promo__btns {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+.promo__link {
+  color: #000;
+  font-weight: bold;
+}
+.promo__link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: bold;
+  line-height: 60px;
+  color: #000;
+}
+.title__fz14 {
+  font-size: 14px;
+  line-height: normal;
+}
+.title__fz16 {
+  font-size: 16px;
+  line-height: normal;
+}
+.title__fz48 {
+  font-size: 48px;
+}
+
+.btn {
+  height: 45px;
+  background: #FFA501;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 12px 25px;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=stile.css.map */
