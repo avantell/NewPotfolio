@@ -352,6 +352,9 @@ template {
   font-size: 16px;
   line-height: normal;
 }
+.title__fz36 {
+  font-size: 36px;
+}
 .title__fz48 {
   font-size: 48px;
 }
@@ -366,7 +369,7 @@ template {
 .sidepanel {
   position: fixed;
   top: 230px;
-  left: 50px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -389,7 +392,7 @@ template {
   width: 150px;
 }
 
-img {
+.social {
   width: 20px;
   height: 20px;
 }
