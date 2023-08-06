@@ -358,6 +358,9 @@ template {
 .title__fz48 {
   font-size: 48px;
 }
+.title__fz36 {
+  font-size: 36px;
+}
 
 .btn {
   height: 45px;
@@ -416,6 +419,12 @@ template {
 }
 .hamburger span.long {
   width: 36px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
 }
 
 .menu {
