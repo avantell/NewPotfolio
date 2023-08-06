@@ -19,5 +19,30 @@
     position: relative
     @include before_circle
     padding: 1px 0 0 12px
+  &__text
+    font-size: 14px
+    line-height: normal
+    margin-top: 20px
+  &__skills
+    display: grid
+    grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px)
+    grid-auto-rows: 1fr
+    column-gap: 50px
+    row-gap: 20px
+  &__skill-item
+    display: grid
+    grid-template-columns: 40px 200px
+    column-gap: 20px
+  &__skill-circle
+      position: relative
+      padding: 15px 0 0 15px
+      @include before_circle
+      &:before
+        top: 0
+  &__skill-text
+    font-size: 12px
+    line-height: normal
+
+
 
 
