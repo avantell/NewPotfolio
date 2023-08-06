@@ -352,6 +352,10 @@ template {
   font-size: 16px;
   line-height: normal;
 }
+.title__fz20 {
+  font-size: 20px;
+  line-height: normal;
+}
 .title__fz36 {
   font-size: 36px;
 }
@@ -584,6 +588,125 @@ template {
 .about__skill-text {
   font-size: 12px;
   line-height: normal;
+}
+
+.resume {
+  margin-top: 120px;
+}
+.resume_title {
+  text-align: center;
+  position: relative;
+}
+.resume_title:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: #FFA501;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.resume_title:before {
+  top: -6px;
+  left: 47%;
+  transform: translateX(50%);
+}
+.resume__subtitle {
+  text-align: center;
+}
+.resume .divider {
+  margin: 25px auto 0 auto;
+}
+.resume__wrapper {
+  display: grid;
+  padding: 60px 65px 0 65px;
+  grid-template-columns: repeat(2, 425px);
+  column-gap: 136px;
+}
+.resume__column-title {
+  position: relative;
+  padding-left: 45px;
+}
+.resume__column-title:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  z-index: -1;
+  left: -7px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.resume ul {
+  list-style-type: none;
+}
+.resume ul li {
+  position: relative;
+}
+.resume ul li:after {
+  content: "";
+  width: 1px;
+  height: calc(100% + 16px);
+  position: absolute;
+  top: -16px;
+  left: 0;
+  background: black;
+}
+.resume__item {
+  position: relative;
+}
+.resume__item:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 45px;
+  top: 65px;
+  background: black;
+}
+.resume__item-head {
+  position: relative;
+  padding: 45px 0 0 100px;
+}
+.resume__item-head h4 {
+  margin-bottom: 0;
+}
+.resume__item-body {
+  padding: 12px 0 0 43px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.resume__item-icon {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+.resume__item-icon:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: #FFA501;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.resume__item-icon:before {
+  left: -15px;
+  top: -50%;
+}
+.resume__item-location {
+  color: #000;
+  font-size: 12px;
+  line-height: normal;
+  margin-top: 5px;
 }
 
 * {
