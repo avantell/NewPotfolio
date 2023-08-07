@@ -709,6 +709,20 @@ template {
   margin-top: 5px;
 }
 
+.works {
+  padding-top: 126px;
+}
+.works__divider {
+  margin: 25px auto 0;
+  width: 60px;
+  height: 3px;
+  background-color: #ffa501;
+}
+.works__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(270px, auto));
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
