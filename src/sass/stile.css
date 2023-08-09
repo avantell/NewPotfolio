@@ -795,6 +795,36 @@ template {
   border-radius: 4px;
 }
 
+.portfolio {
+  padding-top: 120px;
+}
+.portfolio_title {
+  text-align: center;
+  position: relative;
+}
+.portfolio_title:before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background: #FFA501;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+}
+.portfolio_title:before {
+  top: -6px;
+  left: 47%;
+  transform: translateX(50%);
+}
+.portfolio_subtitle {
+  text-align: center;
+}
+.portfolio .divider {
+  margin: 25px auto 0 auto;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
