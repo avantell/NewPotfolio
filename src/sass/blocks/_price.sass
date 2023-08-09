@@ -1,0 +1,23 @@
+.price
+  margin-top: 60px
+  &_title
+    text-align: center
+    position: relative
+    @include before_circle
+    &:before
+      top: -6px
+      left: 47%
+      transform: translateX(50%)
+  .divider
+    margin: 25px auto 0 auto
+  &__divider
+    margin: 25px auto 0
+    width: 60px
+    height: 3px
+    background-color: #ffa501
+  &__wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(270px,auto))
+    column-gap: 13px
+    margin-top: 60px
+    row-gap: 13px
