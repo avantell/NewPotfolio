@@ -824,6 +824,10 @@ template {
 .portfolio .divider {
   margin: 25px auto 0 auto;
 }
+.portfolio__wrapper {
+  margin-top: 60px;
+  display: grid;
+}
 
 * {
   font-family: "Poppins", sans-serif;
