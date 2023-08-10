@@ -849,6 +849,8 @@ template {
 
 .price {
   margin-top: 60px;
+  display: grid;
+  grid-template: repeat(3, 40px)/repeat(2, 350px);
 }
 .price_title {
   text-align: center;
@@ -880,11 +882,45 @@ template {
   background-color: #ffa501;
 }
 .price__wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(270px, auto));
-  column-gap: 13px;
   margin-top: 60px;
-  row-gap: 13px;
+  padding: 0 60px;
+  display: grid;
+  grid-template: repeat(3, minmax(45px, auto))/repeat(2, 365px);
+  grid-auto-rows: minmax(45px, auto);
+  row-gap: 15px;
+  justify-content: space-between;
+}
+.price__item {
+  position: relative;
+  display: grid;
+  grid-template: repeat(2, minmax(21px, auto))/repeat(2, auto);
+  row-gap: 5px;
+  padding-left: 25px;
+}
+.price__item:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #FFA501;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 5px;
+}
+.price__type, .price__count {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.price__count {
+  justify-self: flex-end;
+}
+.price__descr {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  grid-column: 1/3;
 }
 
 * {
