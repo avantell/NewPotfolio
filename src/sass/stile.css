@@ -849,8 +849,6 @@ template {
 
 .price {
   margin-top: 60px;
-  display: grid;
-  grid-template: repeat(3, 40px)/repeat(2, 350px);
 }
 .price_title {
   text-align: center;
