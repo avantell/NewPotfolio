@@ -884,7 +884,7 @@ template {
   padding: 0 60px;
   display: grid;
   grid-template: repeat(3, minmax(45px, auto))/repeat(2, 365px);
-  grid-auto-rows: minmax(45px, auto);
+  grid-auto-rows: auto;
   row-gap: 15px;
   justify-content: space-between;
 }
@@ -902,7 +902,7 @@ template {
   background-color: #FFA501;
   border-radius: 100%;
   position: absolute;
-  margin-top: 5px;
+  top: 5px;
 }
 .price__type, .price__count {
   font-size: 14px;
@@ -911,7 +911,7 @@ template {
   line-height: normal;
 }
 .price__count {
-  justify-self: flex-end;
+  justify-self: end;
 }
 .price__descr {
   font-size: 12px;
