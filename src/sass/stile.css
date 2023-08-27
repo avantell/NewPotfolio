@@ -528,6 +528,8 @@ template {
 }
 .about__photo img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .about__descr {
   padding-top: 6px;
@@ -1029,6 +1031,108 @@ template {
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .sidepanel {
+    display: none;
+  }
+  .about {
+    padding-top: 80px;
+  }
+  .about__wrapper {
+    grid-template-columns: 400px 535px;
+    column-gap: 30px;
+  }
+  .about__skills {
+    grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+    column-gap: 25px;
+    row-gap: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .container .title__fz36 {
+    font-size: 30px;
+  }
+  .container .about__wrapper {
+    grid-template-columns: 300px 380px;
+    height: 100%;
+  }
+  .container .about__photo img {
+    height: 100%;
+  }
+  .container .about__skills {
+    grid-template-columns: 350px;
+    grid-auto-rows: minmax(115px, auto);
+  }
+  .container .about__skill-item {
+    grid-template-columns: 40px 320px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 510px;
+  }
+  .container .title__fz48 {
+    font-size: 28px;
+  }
+  .container .promo__title {
+    width: 300px;
+    line-height: 39px;
+  }
+  .container .about {
+    padding-top: 40px;
+  }
+  .container .about__wrapper {
+    grid-template: 480px auto auto/1fr;
+  }
+  .container .about__photo {
+    grid-row: unset;
+  }
+  .container .about__skills {
+    grid-template-columns: repeat(2, 240px);
+  }
+  .container .about__skill-item {
+    grid-template-columns: 40px 200px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .container .title__48 {
+    font-size: 26px;
+  }
+  .container .title__36 {
+    font-size: 24px;
+  }
+  .container .hamburger {
+    right: 20px;
+  }
+  .container .menu__block {
+    width: 250px;
+    padding-left: 20px;
+  }
+  .container .promo {
+    background: url("../img/main_bg.jpg") no-repeat 57%/cover;
+  }
+  .container .promo__btns {
+    margin-top: 30px;
+  }
+  .container .about__wrapper {
+    grid-template: 340px auto auto/1fr;
+  }
+  .container .about__skills {
+    grid-template-columns: 1fr;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -1043,7 +1147,7 @@ template {
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
