@@ -1,6 +1,7 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+    padding: 0 10px
   .sidepanel
     display: none
   .about
@@ -12,10 +13,20 @@
       grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px)
       column-gap: 25px
       row-gap: 0
+  .resume
+    &__wrapper
+      grid-template-columns: repeat(2,390px)
+      column-gap: 65px
+  .works
+    &__wrapper
+      grid-template-columns: repeat(3,minmax(270px,auto))
+    &__ratings
+      grid-template: repeat(2,minmax(70px,auto))/repeat(2,350px)
 
 @media (max-width: 992px)
   .container
     max-width: 720px
+    padding: 0 10px
     .title
       &__fz36
         font-size: 30px
@@ -32,10 +43,23 @@
       &__skill-item
         grid-template-columns: 40px 320px
         column-gap: 20px
+    .resume
+      margin-top: 55px
+      &__wrapper
+        grid-template-columns: repeat(2,345px)
+        column-gap: 65px
+        padding: 10px
+    .works
+      &__wrapper
+        grid-template-columns: repeat(2,minmax(270px,auto))
+      &__ratings
+        grid-template: repeat(2,minmax(70px,auto))/repeat(2,350px)
+
 
 @media (max-width: 768px)
   .container
     max-width: 510px
+    padding: 0 10px
     .title
       &__fz48
         font-size: 28px
@@ -54,6 +78,12 @@
       &__skill-item
         grid-template-columns: 40px 200px
         column-gap: 20px
+    .resume
+      &__wrapper
+        padding: 40px 10px
+        grid-template-columns: repeat(2,345px)
+        column-gap: 45px
+
 
 @media (max-width: 576px)
   .container
@@ -80,6 +110,22 @@
         grid-template: 340px auto auto / 1fr
       &__skills
         grid-template-columns: 1fr
+    .resume
+      margin-top: 41px
+      padding: 0
+      &__wrapper
+        grid-template: 500px auto auto / 1fr
+    .works
+      &__wrapper
+        grid-template-columns: repeat(1,minmax(270px,auto))
+      &__ratings
+        grid-template: repeat(2,minmax(70px,auto))/repeat(1,300px)
+        &_item
+          grid-template: minmax(21px,auto) 14px/200px 90px
+        &_line
+          width: 300px
+
+
 
 
 

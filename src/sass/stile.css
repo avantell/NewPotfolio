@@ -1034,6 +1034,7 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+    padding: 0 10px;
   }
   .sidepanel {
     display: none;
@@ -1050,10 +1051,21 @@ template {
     column-gap: 25px;
     row-gap: 0;
   }
+  .resume__wrapper {
+    grid-template-columns: repeat(2, 390px);
+    column-gap: 65px;
+  }
+  .works__wrapper {
+    grid-template-columns: repeat(3, minmax(270px, auto));
+  }
+  .works__ratings {
+    grid-template: repeat(2, minmax(70px, auto))/repeat(2, 350px);
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
+    padding: 0 10px;
   }
   .container .title__fz36 {
     font-size: 30px;
@@ -1073,10 +1085,25 @@ template {
     grid-template-columns: 40px 320px;
     column-gap: 20px;
   }
+  .container .resume {
+    margin-top: 55px;
+  }
+  .container .resume__wrapper {
+    grid-template-columns: repeat(2, 345px);
+    column-gap: 65px;
+    padding: 10px;
+  }
+  .container .works__wrapper {
+    grid-template-columns: repeat(2, minmax(270px, auto));
+  }
+  .container .works__ratings {
+    grid-template: repeat(2, minmax(70px, auto))/repeat(2, 350px);
+  }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 510px;
+    padding: 0 10px;
   }
   .container .title__fz48 {
     font-size: 28px;
@@ -1100,6 +1127,11 @@ template {
   .container .about__skill-item {
     grid-template-columns: 40px 200px;
     column-gap: 20px;
+  }
+  .container .resume__wrapper {
+    padding: 40px 10px;
+    grid-template-columns: repeat(2, 345px);
+    column-gap: 45px;
   }
 }
 @media (max-width: 576px) {
@@ -1131,6 +1163,25 @@ template {
   }
   .container .about__skills {
     grid-template-columns: 1fr;
+  }
+  .container .resume {
+    margin-top: 41px;
+    padding: 0;
+  }
+  .container .resume__wrapper {
+    grid-template: 500px auto auto/1fr;
+  }
+  .container .works__wrapper {
+    grid-template-columns: repeat(1, minmax(270px, auto));
+  }
+  .container .works__ratings {
+    grid-template: repeat(2, minmax(70px, auto))/repeat(1, 300px);
+  }
+  .container .works__ratings_item {
+    grid-template: minmax(21px, auto) 14px/200px 90px;
+  }
+  .container .works__ratings_line {
+    width: 300px;
   }
 }
 * {
