@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns: xmlns:>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -130,7 +130,9 @@
     <div class="container">
         <div class="about__wrapper">
             <div class="about__photo">
-                <img src="img/20220612_131505.jpg" alt="photo">
+                <img srcset="img/20220612_131505.jpg 300w,"
+                    sizes="(max-width: 576px) 280px,
+                            (min-width: 577px) 400px">
             </div>
             <div class="about__descr">
                 <h2 class="title title__fz16 about__title">Обо мне</h2>
@@ -358,64 +360,64 @@
     </div>
 </section>
 
-<!--<section class="portfolio">-->
-<!--    <div class="container">-->
-<!--        <h2 class="title title__fz16 portfolio_title">Портфолио</h2>-->
-<!--        <div class="title title__fz36 portfolio_subtitle">Мои работы</div>-->
-<!--        <div class="works__divider"></div>-->
+<section class="portfolio">
+    <div class="container">
+        <h2 class="title title__fz16 portfolio_title">Портфолио</h2>
+        <div class="title title__fz36 portfolio_subtitle">Мои работы</div>
+        <div class="works__divider"></div>
 
-<!--        <div class="portfolio__wrapper">-->
-<!--            <a href="#" class="portfolio__item"><img src="img/works/uber.jpg" alt="uber"></a>-->
-<!--            <a href="#" class="portfolio__item"><img src="img/works/pulse.jpg" alt="pulse"></a>-->
-<!--            <a href="#" class="portfolio__item"><img src="img/works/bread.jpg" alt="bread"></a>-->
-<!--            <a href="#" class="portfolio__item vertical"><img src="img/works/plans.jpg" alt="plans"></a>-->
-<!--            <a href="#" class="portfolio__item"><img src="img/works/ipad.jpg" alt="ipad"></a>-->
-<!--            <a href="#" class="portfolio__item horizontal"><img src="img/works/mac.jpg" alt="mac"></a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+        <div class="portfolio__wrapper">
+            <a href="#" class="portfolio__item"><img src="img/works/uber.jpg" alt="uber"></a>
+            <a href="#" class="portfolio__item"><img src="img/works/pulse.jpg" alt="pulse"></a>
+            <a href="#" class="portfolio__item"><img src="img/works/bread.jpg" alt="bread"></a>
+            <a href="#" class="portfolio__item vertical"><img src="img/works/plans.jpg" alt="plans"></a>
+            <a href="#" class="portfolio__item"><img src="img/works/ipad.jpg" alt="ipad"></a>
+            <a href="#" class="portfolio__item horizontal"><img src="img/works/mac.jpg" alt="mac"></a>
+        </div>
+    </div>
+</section>
 
-<!--<section class="price">-->
-<!--    <div class="container">-->
-<!--        <h2 class="title title__fz16 price_title">Прайс Лист</h2>-->
-<!--        <div class="price__divider"></div>-->
+<section class="price">
+    <div class="container">
+        <h2 class="title title__fz16 price_title">Прайс Лист</h2>
+        <div class="price__divider"></div>
 
-<!--        <div class="price__wrapper">-->
-<!--            <div class="price__item">-->
-<!--                <div class="price__type">Landing-page</div>-->
-<!--                <div class="price__count">от 8000 руб.</div>-->
-<!--                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>-->
-<!--            </div>-->
-<!--            <div class="price__item">-->
-<!--                <div class="price__type">Landing-page</div>-->
-<!--                <div class="price__count">от 8000 руб.</div>-->
-<!--                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>-->
-<!--            </div>-->
-<!--            <div class="price__item">-->
-<!--                <div class="price__type">Landing-page</div>-->
-<!--                <div class="price__count">от 8000 руб.</div>-->
-<!--                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>-->
-<!--            </div>-->
-<!--            <div class="price__item">-->
-<!--                <div class="price__type">Landing-page</div>-->
-<!--                <div class="price__count">от 8000 руб.</div>-->
-<!--                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>-->
-<!--            </div>-->
-<!--            <div class="price__item">-->
-<!--                <div class="price__type">Landing-page</div>-->
-<!--                <div class="price__count">от 8000 руб.</div>-->
-<!--                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>-->
-<!--            </div>-->
-<!--            <div class="price__item">-->
-<!--                <div class="price__type">Landing-page</div>-->
-<!--                <div class="price__count">от 8000 руб.</div>-->
-<!--                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>-->
-<!--            </div>-->
+        <div class="price__wrapper">
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 8000 руб.</div>
+                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 8000 руб.</div>
+                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 8000 руб.</div>
+                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 8000 руб.</div>
+                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 8000 руб.</div>
+                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
+            <div class="price__item">
+                <div class="price__type">Landing-page</div>
+                <div class="price__count">от 8000 руб.</div>
+                <div class="price__descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
 
-<!--        </div>-->
+        </div>
 
-<!--    </div>-->
-<!--</section>-->
+    </div>
+</section>
 
 <!--<section class="contacts">-->
 <!--    <div class="container">-->

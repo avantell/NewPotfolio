@@ -54,6 +54,20 @@
         grid-template-columns: repeat(2,minmax(270px,auto))
       &__ratings
         grid-template: repeat(2,minmax(70px,auto))/repeat(2,350px)
+    .portfolio
+      &__wrapper
+        grid-template-columns: repeat(auto-fit, 280px)
+        grid-auto-rows: 280px
+        justify-content: center
+        .vertical, .horizontal
+          grid-row: unset
+          grid-column: unset
+    .price
+      &__wrapper
+        grid-template-columns: repeat(auto-fit, 350px)
+        padding: 0
+
+
 
 
 @media (max-width: 768px)
@@ -83,6 +97,8 @@
         padding: 40px 10px
         grid-template-columns: repeat(2,345px)
         column-gap: 45px
+    .price
+      padding-top: 40px
 
 
 @media (max-width: 576px)
@@ -124,6 +140,9 @@
           grid-template: minmax(21px,auto) 14px/200px 90px
         &_line
           width: 300px
+    .price
+      &__wrapper
+        grid-template-columns: repeat(auto-fit,286px)
 
 
 
