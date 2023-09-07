@@ -1063,6 +1063,12 @@ template {
   .works__ratings {
     grid-template: repeat(2, minmax(70px, auto))/repeat(2, 350px);
   }
+  .portfolio__wrapper {
+    grid-template: repeat(2, 280px)/repeat(4, 250px);
+  }
+  .contacts__wrapper {
+    padding: 0;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -1070,7 +1076,7 @@ template {
     padding: 0 10px;
   }
   .container .title__fz36 {
-    font-size: 30px;
+    font-size: 23px;
   }
   .container .about__wrapper {
     grid-template-columns: 300px 380px;
@@ -1102,7 +1108,7 @@ template {
     grid-template: repeat(2, minmax(70px, auto))/repeat(2, 350px);
   }
   .container .portfolio__wrapper {
-    grid-template-columns: repeat(auto-fit, 280px);
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: 280px;
     justify-content: center;
   }
@@ -1114,6 +1120,13 @@ template {
     grid-template-columns: repeat(auto-fit, 350px);
     padding: 0;
   }
+  .container .contacts__wrapper {
+    grid-template-columns: 645px;
+    padding: 0 65px;
+  }
+  .container .contacts__photo {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1121,7 +1134,7 @@ template {
     padding: 0 10px;
   }
   .container .title__fz48 {
-    font-size: 28px;
+    font-size: 21px;
   }
   .container .promo__title {
     width: 300px;
@@ -1150,6 +1163,18 @@ template {
   }
   .container .price {
     padding-top: 40px;
+  }
+  .container .contacts {
+    padding-top: 40px;
+  }
+  .container .contacts__photo {
+    display: none;
+  }
+  .container .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .container .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 250px);
   }
 }
 @media (max-width: 576px) {
@@ -1201,8 +1226,34 @@ template {
   .container .works__ratings_line {
     width: 300px;
   }
-  .container .price__wrapper {
-    grid-template-columns: repeat(auto-fit, 286px);
+  .container .contacts {
+    padding-bottom: 50px;
+  }
+  .container .contacts .title__fz48 {
+    font-size: 28px;
+  }
+  .container .contacts__form {
+    grid-template: 45px 45px 190px minmax(45px, auto)/1fr;
+  }
+  .container .contacts__textarea {
+    grid-column: unset;
+    width: 100%;
+  }
+  .container .contacts__triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 20px;
+  }
+  .container .contacts__btn {
+    order: 2;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .container .contacts__policy {
+    width: 180px;
+    margin: 0 auto;
+    line-height: 18px;
   }
 }
 * {
